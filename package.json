@@ -13,6 +13,7 @@
   "license": "ISC",
   "packageManager": "pnpm@8.15.7+sha1.44793e979f677db082fa49826446aad5aa4ee6b8",
   "devDependencies": {
+    "@types/node": "^20.12.12",
     "tsx": "^4.10.2",
     "typescript": "^5.4.5"
   },
@@ -21,6 +22,7 @@
     "@fastify/jwt": "^8.0.1",
     "@fastify/swagger": "^8.14.0",
     "@fastify/swagger-ui": "^3.0.0",
+    "dotenv-cli": "^7.4.2",
     "fastify": "^4.27.0",
     "fastify-plugin": "^4.5.1",
     "fastify-type-provider-zod": "^1.1.9",

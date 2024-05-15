@@ -4,9 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
+    "start": "pnpm env:load node dist/server.js",
     "dev": "tsx --watch src/server",
-    "build": "tsx src/server"
+    "build": "tsup src/server.ts --format cjs --target es2020",
+    "env:load": "dotenv -e .env --"
   },
   "keywords": [],
   "author": "",
@@ -14,6 +15,7 @@
   "packageManager": "pnpm@8.15.7+sha1.44793e979f677db082fa49826446aad5aa4ee6b8",
   "devDependencies": {
     "@types/node": "^20.12.12",
+    "tsup": "^8.0.2",
     "tsx": "^4.10.2",
     "typescript": "^5.4.5"
   },

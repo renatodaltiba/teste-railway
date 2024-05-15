@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "pnpm env:load node dist/server.js --host 0.0.0.0",
+    "start": "pnpm env:load node dist/server.js",
     "dev": "tsx --watch src/server",
     "build": "tsup src/server.ts --format cjs --target es2020",
     "env:load": "dotenv -e .env --"
